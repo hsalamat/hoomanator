@@ -25,11 +25,11 @@ namespace HelloCoreWorld.Controllers
         public IActionResult Index()
         {
             TestModel testModel = new TestModel();
-            var protectedData = _dataProtector.Protect("Hello World");
-            testModel.ProtectedData = "Protected Data: " + protectedData;
+            var protectedData = _dataProtector.Protect("Hello Chubbly bubbly");
+            //testModel.ProtectedData = "Protected Data: " + protectedData;
 
             var unProtectedData = _dataProtector.Unprotect(protectedData);
-            testModel.UnProtectedData = "UnProtected Data: " + unProtectedData;
+            //testModel.UnProtectedData = "UnProtected Data: " + unProtectedData;
 
             return View(testModel);
         }
