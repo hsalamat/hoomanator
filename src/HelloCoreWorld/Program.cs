@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,8 @@ builder.Services.AddDataProtection();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDirectoryBrowser();
 
 var app = builder.Build();
 
@@ -37,6 +40,42 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+var fileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.WebRootPath, "WebGPU"));
+var requestPath = "/WebGPU";
+
+// Enable displaying browser links.
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = fileProvider,
+    RequestPath = requestPath
+});
+
+app.UseDirectoryBrowser(new DirectoryBrowserOptions
+{
+    FileProvider = fileProvider,
+    RequestPath = requestPath
+});
+
+
+var fileProvider2 = new PhysicalFileProvider(Path.Combine(builder.Environment.WebRootPath, "WebGL2"));
+var requestPath2 = "/WebGL2";
+
+// Enable displaying browser links.
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = fileProvider2,
+    RequestPath = requestPath2
+});
+
+app.UseDirectoryBrowser(new DirectoryBrowserOptions
+{
+    FileProvider = fileProvider2,
+    RequestPath = requestPath2
+});
+
+
+
 
 app.UseRouting();
 

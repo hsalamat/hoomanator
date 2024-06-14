@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\WebGL2\**" />
-    <Content Remove="wwwroot\WebGL2\**" />
-    <EmbeddedResource Remove="wwwroot\WebGL2\**" />
-    <None Remove="wwwroot\WebGL2\**" />
   </ItemGroup>
 
   <ItemGroup>
