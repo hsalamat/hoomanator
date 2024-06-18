@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -75,7 +76,32 @@ app.UseDirectoryBrowser(new DirectoryBrowserOptions
 });
 
 
+//for webgl
+var fileProvider3 = new PhysicalFileProvider(Path.Combine(builder.Environment.WebRootPath, "DinoRun"));
+var requestPath3 = "/DinoRun";
 
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = fileProvider3,
+    RequestPath = requestPath3
+});
+
+app.UseDirectoryBrowser(new DirectoryBrowserOptions
+{
+    FileProvider = fileProvider3,
+    RequestPath = requestPath3
+});
+
+app.UseStaticFiles(new StaticFileOptions()
+{
+    ContentTypeProvider = new FileExtensionContentTypeProvider(new Dictionary<string, string>
+    {
+     {
+         ".data",
+         "application/octet-stream"
+       }
+    })
+});
 
 app.UseRouting();
 
