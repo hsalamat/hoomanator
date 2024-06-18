@@ -117,6 +117,11 @@ app.MapGet("/DinoRun",  async context =>
      context.Response.Redirect("/DinoRun/index.html");
 });
 
+app.MapGet("/EggCatcher", async context =>
+{
+    context.Response.Redirect("/EggCatcher/index.html");
+});
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
