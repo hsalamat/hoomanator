@@ -107,20 +107,26 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-//app.MapGet("/DinoRun",  async context => 
-//{
-//     context.Response.Redirect("http://www.cnn.com");
-//});
-
-app.MapGet("/DinoRun",  async context => 
-{
-     context.Response.Redirect("/DinoRun/index.html");
-});
 
 app.MapGet("/EggCatcher", async context =>
 {
-    context.Response.Redirect("/EggCatcher/index.html");
+    context.Response.Redirect("https://hoomanator.github.io/EggCatcher/index.html");
 });
+
+app.MapGet("/DinoRun", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/DinoRun/index.html");
+});
+
+//app.MapGet("/DinoRun",  async context => 
+//{
+//     context.Response.Redirect("/DinoRun/index.html");
+//});
+
+//app.MapGet("/EggCatcher", async context =>
+//{
+//    context.Response.Redirect("/EggCatcher/index.html");
+//});
 
 app.MapControllerRoute(
     name: "default",
