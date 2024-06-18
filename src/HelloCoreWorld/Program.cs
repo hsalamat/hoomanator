@@ -77,20 +77,20 @@ app.UseDirectoryBrowser(new DirectoryBrowserOptions
 
 
 //for webgl
-var fileProvider3 = new PhysicalFileProvider(Path.Combine(builder.Environment.WebRootPath, "DinoRun"));
-var requestPath3 = "/DinoRun";
+//var fileProvider3 = new PhysicalFileProvider(Path.Combine(builder.Environment.WebRootPath, "DinoRun"));
+//var requestPath3 = "/DinoRun";
 
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = fileProvider3,
-    RequestPath = requestPath3
-});
+//app.UseStaticFiles(new StaticFileOptions
+//{
+//    FileProvider = fileProvider3,
+//    RequestPath = requestPath3
+//});
 
-app.UseDirectoryBrowser(new DirectoryBrowserOptions
-{
-    FileProvider = fileProvider3,
-    RequestPath = requestPath3
-});
+//app.UseDirectoryBrowser(new DirectoryBrowserOptions
+//{
+//    FileProvider = fileProvider3,
+//    RequestPath = requestPath3
+//});
 
 app.UseStaticFiles(new StaticFileOptions()
 {
@@ -106,6 +106,16 @@ app.UseStaticFiles(new StaticFileOptions()
 app.UseRouting();
 
 app.UseAuthorization();
+
+//app.MapGet("/DinoRun",  async context => 
+//{
+//     context.Response.Redirect("http://www.cnn.com");
+//});
+
+app.MapGet("/DinoRun",  async context => 
+{
+     context.Response.Redirect("/DinoRun/index.html");
+});
 
 app.MapControllerRoute(
     name: "default",
