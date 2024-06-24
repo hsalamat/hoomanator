@@ -123,6 +123,11 @@ app.MapGet("/BlockDodge", async context =>
     context.Response.Redirect("https://hoomanator.github.io/BlockDodge/index.html");
 });
 
+app.MapGet("/MazeBall", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/MazeBall/index.html");
+});
+
 //app.MapGet("/DinoRun",  async context => 
 //{
 //     context.Response.Redirect("/DinoRun/index.html");
