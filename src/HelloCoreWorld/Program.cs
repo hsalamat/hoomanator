@@ -138,6 +138,13 @@ app.MapGet("/CoinCollector", async context =>
     context.Response.Redirect("https://hoomanator.github.io/CoinCollector/index.html");
 });
 
+
+app.MapGet("/HouseProject1", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/HouseProject1/index.html");
+});
+
+
 //app.MapGet("/DinoRun",  async context => 
 //{
 //     context.Response.Redirect("/DinoRun/index.html");
