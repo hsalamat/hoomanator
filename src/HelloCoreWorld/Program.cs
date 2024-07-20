@@ -144,6 +144,12 @@ app.MapGet("/HouseProject1", async context =>
     context.Response.Redirect("https://hoomanator.github.io/HouseProject1/index.html");
 });
 
+app.MapGet("/HouseProject2", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/HouseProject2/index.html");
+});
+
+
 
 //app.MapGet("/DinoRun",  async context => 
 //{
