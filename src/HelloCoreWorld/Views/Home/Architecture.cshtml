@@ -3,15 +3,18 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<div class="text-left">    
-    <ul class="navbar-nav flex-grow-1">
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="." asp-action="HouseProject1">Kitchen Model 1</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="." asp-action="HouseProject2">Kitchen Model 2</a>
-        </li>       
-    </ul>
-    <b></b>
+<div class="card-column">
+    <div class="card">
+        <div class="card-body" style="background-color:chocolate ">
+            <div class="card-title" style="background-color:gold">
+                <a  asp-area="" asp-controller="." asp-action="HouseProject1">Kitchen Model 1</a>
+            </div>
+            <div class="card-title" style="background-color:gold">
+                <a  asp-area="" asp-controller="." asp-action="HouseProject2">Kitchen Model 2</a>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 
