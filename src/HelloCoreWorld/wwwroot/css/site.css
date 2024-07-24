@@ -113,9 +113,30 @@ html {
     min-height: 100%;
 }
 
+
+
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    margin-bottom: 60px;    
+    background-color:tan;
+}
+
+.mybackgroundimage1 {
+    background-image: url("/room.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 520px;
+    height: 202px;
+    border: solid 2px black;
+}
+
+.mybackgroundimage2 {
+    background-image: url("/room2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 520px;
+    height: 202px;
+    border: solid 2px black;
 }
 
 p {

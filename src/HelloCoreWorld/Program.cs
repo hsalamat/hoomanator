@@ -76,6 +76,7 @@ app.UseDirectoryBrowser(new DirectoryBrowserOptions
 });
 
 
+
 //for webgl
 //var fileProvider3 = new PhysicalFileProvider(Path.Combine(builder.Environment.WebRootPath, "DinoRun"));
 //var requestPath3 = "/DinoRun";
