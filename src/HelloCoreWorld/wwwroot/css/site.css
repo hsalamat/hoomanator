@@ -122,11 +122,11 @@ body {
 }
 
 .mybackgroundimage1 {
-    background-image: url("/room.png");
+    background-image: url("/room_1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 520px;
-    height: 202px;
+    width: 719px;
+    height: 324px;
     border: solid 2px black;
 }
 
@@ -134,8 +134,8 @@ body {
     background-image: url("/room2.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 520px;
-    height: 202px;
+    width: 719px;
+    height: 279px;
     border: solid 2px black;
 }
 
