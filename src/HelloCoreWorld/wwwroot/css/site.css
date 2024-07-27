@@ -140,7 +140,16 @@ body {
 }
 
 .mybackgroundimage3 {
-    background-image: url("/alien1.png");
+    background-image: url("/room_3.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 719px;
+    height: 243px;
+    border: solid 2px black;
+}
+
+.mybackgroundimage4 {
+    background-image: url("/alien1.jpeg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 719px;
