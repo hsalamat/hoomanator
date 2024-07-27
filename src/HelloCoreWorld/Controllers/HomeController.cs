@@ -34,12 +34,23 @@ namespace HelloCoreWorld.Controllers
             return View(testModel);
         }
 
-        public IActionResult Privacy()
+        //public IActionResult Privacy()
+        //{
+        //    return View();
+        //}
+
+
+        public IActionResult Architecture()
         {
             return View();
         }
 
-        public IActionResult Architecture()
+        public IActionResult InteractiveArchitecture()
+        {
+            return View();
+        }
+
+        public IActionResult HighResArchitecture()
         {
             return View();
         }

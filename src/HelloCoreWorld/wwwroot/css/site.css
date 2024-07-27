@@ -118,7 +118,7 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;    
-    background-color:tan;
+    background-color:beige;
 }
 
 .mybackgroundimage1 {
@@ -150,6 +150,42 @@ body {
 
 .mybackgroundimage4 {
     background-image: url("/alien1.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 719px;
+    height: 321px;
+    border: solid 2px black;
+}
+
+.mybackgroundimage5 {
+    background-image: url("/room_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 719px;
+    height: 324px;
+    border: solid 2px black;
+}
+
+.mybackgroundimage6 {
+    background-image: url("/room2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 719px;
+    height: 279px;
+    border: solid 2px black;
+}
+
+.mybackgroundimage7 {
+    background-image: url("/room_3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 719px;
+    height: 243px;
+    border: solid 2px black;
+}
+
+.mybackgroundimage8 {
+    background-image: url("/alien1.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 719px;
