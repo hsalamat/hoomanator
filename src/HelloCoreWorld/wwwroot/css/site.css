@@ -139,6 +139,15 @@ body {
     border: solid 2px black;
 }
 
+.mybackgroundimage3 {
+    background-image: url("/alien1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 719px;
+    height: 321px;
+    border: solid 2px black;
+}
+
 p {
     font-family: 'Nunito', sans-serif;
 }
