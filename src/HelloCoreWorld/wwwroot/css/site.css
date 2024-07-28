@@ -118,7 +118,7 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;    
-    background-color:beige;
+    background-color: coral;
 }
 
 .mybackgroundimage1 {
@@ -215,15 +215,15 @@ ul {
 }
 /*Backgrounds*/
 .bg-navbar {
-    background: -webkit-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
-    background: -o-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
-    background: -moz-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
-    background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+    background: -webkit-linear-gradient(110deg, coral 100%, #e9a8a6 60%);
+    background: -o-linear-gradient(110deg, coral 100%, #e9a8a6 60%);
+    background: -moz-linear-gradient(110deg, coral 100%, #e9a8a6 60%);
+    background: linear-gradient(110deg, coral 100%, #e9a8a6 60%);
 }
 
 .bg-footer {
-    background: -webkit-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
-    background: -o-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
-    background: -moz-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
-    background: linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: -webkit-linear-gradient(110deg, coral 100%, #e9a8a6 60%);
+    background: -o-linear-gradient(110deg, coral 100%, #e9a8a6 60%);
+    background: -moz-linear-gradient(110deg, coral 100%, #e9a8a6 60%);
+    background: linear-gradient(110deg, coral 100%, #e9a8a6 60%);
 }

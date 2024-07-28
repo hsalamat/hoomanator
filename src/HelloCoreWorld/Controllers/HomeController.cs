@@ -45,12 +45,12 @@ namespace HelloCoreWorld.Controllers
             return View();
         }
 
-        public IActionResult InteractiveArchitecture()
+        public IActionResult Interactive()
         {
             return View();
         }
 
-        public IActionResult HighResArchitecture()
+        public IActionResult HighRes()
         {
             return View();
         }

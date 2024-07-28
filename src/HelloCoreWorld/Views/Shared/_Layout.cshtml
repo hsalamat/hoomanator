@@ -6,11 +6,13 @@
     <title>@ViewData["Title"] - Hoomanator</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/HelloCoreWorld.styles.css" asp-append-version="true" />    
+    <link rel="stylesheet" href="~/HelloCoreWorld.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-navbar navbar-light border-bottom box-shadow mb-3 ">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Hoomanator</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -26,10 +28,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Architecture">Architecture</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="InteractiveArchitecture">Interactive Architecture</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Interactive">Interactive Architecture</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="HighResArchitecture">High Resolution Architecture</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="HighRes">High Resolution Architecture</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Games">Games</a>
@@ -46,11 +48,11 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div> 
+    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Hoomanator Enterprises - 
+            &copy; 2024 - Hoomanator Enterprises -
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
