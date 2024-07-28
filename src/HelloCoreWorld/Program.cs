@@ -150,6 +150,25 @@ app.MapGet("/HouseProject2", async context =>
     context.Response.Redirect("https://hoomanator.github.io/HouseProject2/index.html");
 });
 
+app.MapGet("/GAME2012", async context =>
+{
+    context.Response.Redirect("https://github.com/hsalamat/OpenGL");
+});
+
+app.MapGet("/GAME3111", async context =>
+{
+    context.Response.Redirect("https://github.com/hsalamat/DirectX");
+});
+
+app.MapGet("/GAME3015", async context =>
+{
+    context.Response.Redirect("https://github.com/hsalamat/GameEngineDevelopment2");
+});
+
+app.MapGet("/GAME3121", async context =>
+{
+    context.Response.Redirect("https://github.com/hsalamat/GAME3121");
+});
 
 
 //app.MapGet("/DinoRun",  async context => 

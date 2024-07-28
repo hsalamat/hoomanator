@@ -40,17 +40,13 @@ namespace HelloCoreWorld.Controllers
         //}
 
 
-        public IActionResult Architecture()
-        {
-            return View();
-        }
 
         public IActionResult Interactive()
         {
             return View();
         }
 
-        public IActionResult HighRes()
+        public IActionResult Architecture()
         {
             return View();
         }
