@@ -207,7 +207,16 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     width: 719px;
-    height: 700px;
+    height: 701px;
+    border: solid 2px black;
+}
+
+.mybackgroundimage11 {
+    background-image: url("/alien4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 719px;
+    height: 268.5px;
     border: solid 2px black;
 }
 
