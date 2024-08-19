@@ -181,6 +181,11 @@ app.MapGet("/GAME3121", async context =>
 //    context.Response.Redirect("/EggCatcher/index.html");
 //});
 
+app.MapGet("/AStar", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/AI/index.html");
+});
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
