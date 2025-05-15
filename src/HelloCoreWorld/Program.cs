@@ -42,20 +42,26 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-var fileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.WebRootPath, "WebGPU"));
-var requestPath = "/WebGPU";
+//var fileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.WebRootPath, "WebGPU"));
+//var requestPath = "/WebGPU";
 
-// Enable displaying browser links.
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = fileProvider,
-    RequestPath = requestPath
-});
+//// Enable displaying browser links.
+//app.UseStaticFiles(new StaticFileOptions
+//{
+//    FileProvider = fileProvider,
+//    RequestPath = requestPath
+//});
 
-app.UseDirectoryBrowser(new DirectoryBrowserOptions
+//app.UseDirectoryBrowser(new DirectoryBrowserOptions
+//{
+//    FileProvider = fileProvider,
+//    RequestPath = requestPath
+//});
+
+
+app.MapGet("/WebGPU", async context =>
 {
-    FileProvider = fileProvider,
-    RequestPath = requestPath
+    context.Response.Redirect("https://hoomanator.github.io/WebGPU");
 });
 
 

@@ -229,6 +229,15 @@ body {
     border: solid 2px black;
 }
 
+.mybackgroundimage13 {
+    background-image: url("/city.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 719px;
+    height: 375.74998px;
+    border: solid 2px black;
+}
+
 p {
     font-family: 'Nunito', sans-serif;
 }
