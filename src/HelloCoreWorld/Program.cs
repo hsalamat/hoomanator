@@ -61,7 +61,7 @@ app.UseStaticFiles();
 
 app.MapGet("/WebGPU", async context =>
 {
-    context.Response.Redirect("https://hoomanator.github.io/WebGPU");
+    context.Response.Redirect("https://hoomanator.github.io/WebGPU/index.html");
 });
 
 
