@@ -197,6 +197,11 @@ app.MapGet("/NavMesh", async context =>
     context.Response.Redirect("https://hoomanator.github.io/NavMesh/index.html");
 });
 
+app.MapGet("/SportStats", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/SportStats/index.html");
+});
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
