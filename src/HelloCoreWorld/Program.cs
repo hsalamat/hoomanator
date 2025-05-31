@@ -199,7 +199,7 @@ app.MapGet("/NavMesh", async context =>
 
 app.MapGet("/SportsAnalytics", async context =>
 {
-    context.Response.Redirect("https://hoomanator.github.io/SportsAnalytics/index.html");
+    context.Response.Redirect("https://hoomanator.github.io/SportsAnalytics/dist/index.html");
 });
 
 app.MapControllerRoute(
