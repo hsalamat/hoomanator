@@ -202,6 +202,11 @@ app.MapGet("/SportsAnalytics", async context =>
     context.Response.Redirect("https://hoomanator.github.io/SportsAnalytics/dist/index.html");
 });
 
+app.MapGet("/Animation1", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/Animation1/index.html");
+});
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
