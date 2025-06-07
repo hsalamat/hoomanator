@@ -217,6 +217,34 @@ app.MapGet("/Animation3", async context =>
     context.Response.Redirect("https://hoomanator.github.io/Animation3/index.html");
 });
 
+
+
+app.MapGet("/Food1", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/Food/How_To_Make_Focaccia_From_Scratch.htm");
+});
+
+app.MapGet("/Food2", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/Food/How_To_Make_Pizza_From_Scratch.htm");
+});
+
+app.MapGet("/Food3", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/Food/How_To_Make_Vegan_Cinnamon_Buns_From_Scratch.htm");
+});
+
+app.MapGet("/Food4", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/Food/How_To_Make_Vegan_No_Knead_Bread_From_Scratch.htm");
+});
+
+app.MapGet("/Food5", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/Food/How_To_Make_Vegan_Whole_Wheat_Bread_Loaves_From_Scratch.htm");
+});
+
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
