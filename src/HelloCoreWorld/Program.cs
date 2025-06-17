@@ -202,6 +202,16 @@ app.MapGet("/SportsAnalytics", async context =>
     context.Response.Redirect("https://hoomanator.github.io/SportsAnalytics/dist/index.html");
 });
 
+app.MapGet("/Brain", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/Brain/index.html");
+});
+
+app.MapGet("/TensorFlow", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/TensorFlow/index.html");
+});
+
 app.MapGet("/Animation1", async context =>
 {
     context.Response.Redirect("https://hoomanator.github.io/Animation1/index.html");
