@@ -227,7 +227,7 @@ app.MapGet("/Animation3", async context =>
     context.Response.Redirect("https://hoomanator.github.io/Animation3/index.html");
 });
 
-app.MapGet("/Animation3", async context =>
+app.MapGet("/Animation4", async context =>
 {
     context.Response.Redirect("https://hoomanator.github.io/Animation4/index.html");
 });
