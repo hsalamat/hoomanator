@@ -187,6 +187,11 @@ app.MapGet("/GAME3121", async context =>
 //    context.Response.Redirect("/EggCatcher/index.html");
 //});
 
+app.MapGet("/ImageRecognition", async context =>
+{
+    context.Response.Redirect("https://hoomanator.github.io/ML5/src/ml5003/index.html");
+});
+
 app.MapGet("/AStar", async context =>
 {
     context.Response.Redirect("https://hoomanator.github.io/AI/index.html");
